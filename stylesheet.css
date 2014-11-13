@@ -1,0 +1,108 @@
+html, body, main, h1, h2, h3, header, img, ul, li, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: sans-serif;
+  -webkit-appearance: none;
+}
+
+.group:after, .group:before {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+html {
+  width: 100%;
+  background: #FEFEFE;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  border-bottom: 1px solid #999;
+  background: #F5F5F5;
+}
+
+div.header-container {
+
+  margin: auto;
+  max-width: 900px;
+}
+
+div.header-container ul {
+  float: right;
+  display: block;
+  position: relative;
+}
+
+div.header-container li {
+  float: left;
+  display: block;
+}
+
+div.header-container li a {
+  display: block;
+  padding: 15px 20px;
+  margin: 10px 5px;
+  background: #1E90FF;
+  border-radius: 4px;
+  color: #F5F5F5;
+  box-shadow: 2px 2px 4px #333;
+}
+
+div.header-container li a:hover {
+  background: #4682B4
+}
+
+div.header-container li a:active{
+  position: relative;
+  top: 4px;
+  left: 4px;
+  box-shadow: none;
+}
+
+main {
+  max-width: 870px;
+  margin: 15px auto;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  display: block;
+}
+
+section.project-links a {
+  display: block;
+  margin-top: 15px;
+  float: left;
+  width: 290px;
+  text-align: center;
+}
+
+div.logo {
+  position: relative;
+  float: left;
+  display: block;
+}
+
+div.logo img {
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
