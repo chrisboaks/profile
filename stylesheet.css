@@ -33,7 +33,6 @@ header {
 }
 
 div.header-container {
-
   margin: auto;
   max-width: 900px;
 }
@@ -73,6 +72,8 @@ div.header-container li a:active{
 main {
   max-width: 870px;
   margin: 15px auto;
+  border-left: 1px solid #F5F5F5;
+  border-right: 1px solid #F5F5F5;
 }
 
 h1 {
@@ -87,14 +88,6 @@ h2 {
   display: block;
 }
 
-section.project-links a {
-  display: block;
-  margin-top: 15px;
-  float: left;
-  width: 290px;
-  text-align: center;
-}
-
 div.logo {
   position: relative;
   float: left;
@@ -105,4 +98,57 @@ div.logo img {
   height: 50px;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+section.bio h1 {
+  /*display: block;*/
+  /*float: right;*/
+  text-align: right;
+  margin: 15px;
+}
+
+section.bio section.bio-text {
+  margin: 15px;
+
+}
+
+#profile-photo {
+  display: block;
+  float: right;
+  width: 300px;
+  margin: 15px;
+}
+
+section.project-links a {
+  color: black;
+}
+
+section.project-links a:hover {
+  color: #696969;
+}
+
+h4 {
+  text-align: center;
+  margin: 10px;
+}
+
+figure.project {
+  width: 350px;
+  /*margin: 20px;*/
+  border: 2px solid black;
+  border-radius: 4px;
+  float: left;
+}
+
+figure.project img {
+  width: 100%;
+}
+
+figure.project figcaption {
+  margin: 5px;
+}
+
+figcaption li {
+  text-indent: -15px;
+  margin-left: 15px;
 }
