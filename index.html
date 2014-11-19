@@ -5,6 +5,7 @@
   <title>Chris Boaks</title>
 
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <script src="jquery-1.11.1.min.js"></script>
 
 </head>
 <body>
@@ -54,7 +55,12 @@
 
       <a href="http://asteroids.chrisboaks.com">
         <figure class="project">
-          <img src="asteroids-pic.png" alt="asteroids">
+
+          <video class="project-vid" preload loop>
+            <source src="./asteroids.m4v">
+          </video>
+
+
           <figcaption>
             <h4>Asteroids</h4>
             <ul>
@@ -68,7 +74,11 @@
 
       <a href="http://artstack.chrisboaks.com">
         <figure class="project">
-          <img src="artstack-pic.png" alt="artstack">
+
+          <video class="project-vid" preload loop>
+            <source src="./artstack.m4v">
+          </video>
+
           <figcaption>
             <h4>ArtStack</h4>
             <ul>
@@ -80,7 +90,60 @@
         </figure>
       </a>
 
+      <a href="http://asteroids.chrisboaks.com">
+        <figure class="project">
+
+          <video class="project-vid" preload loop>
+            <source src="./chess.m4v">
+          </video>
+
+
+          <figcaption>
+            <h4>Chess</h4>
+            <ul>
+              <li>Implemented in Ruby</li>
+              <li>Uses custom cursor interaction to enter moves, refreshing terminal with each change</li>
+              <li>Visually indicates possible moves and captures, easing play for beginners</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="http://sudoku.chrisboaks.com">
+        <figure class="project">
+
+          <video class="project-vid" preload loop>
+            <source src="./sudoku.m4v">
+          </video>
+
+
+          <figcaption>
+            <h4>Sudoku</h4>
+            <ul>
+              <li>Implemented using JS and Underscore</li>
+              <li>Populates example boards of varying difficulty levels</li>
+              <li>Allows user to view a stylized hint or solve entire board at once</li>
+            </ul>
+          </figcaption>
+        </figure>
+      </a>
+
     </section>
+
+    <script charset="utf-8">
+      $('.project-vid').on("mouseenter", function(event) {
+        event.preventDefault();
+        var vid = $(event.currentTarget);
+        vid[0].play();
+      });
+
+      $('.project-vid').on("mouseleave", function(event) {
+        event.preventDefault();
+        var vid = $(event.currentTarget);
+        vid[0].pause();
+      });
+
+    </script>
 
   </main>
 
