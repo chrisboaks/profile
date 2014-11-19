@@ -73,15 +73,10 @@ div.header-container li a:active{
 
 main {
   max-width: 870px;
-  margin: 15px auto;
+  margin: 25px auto;
+  padding-bottom: 25px;
   border-left: 1px solid #F5F5F5;
   border-right: 1px solid #F5F5F5;
-}
-
-h2 {
-  text-align: center;
-  font-size: 30px;
-  display: block;
 }
 
 div.logo {
@@ -103,8 +98,19 @@ h1 {
   margin: 15px;
 }
 
+h2 {
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  padding-top: 10px;
+}
+
 .bio-text {
   margin: 15px;
+}
+
+section.bio {
+  margin: 40px 25px;
 }
 
 #profile-photo {
@@ -112,6 +118,8 @@ h1 {
   float: right;
   width: 300px;
   margin: 15px;
+  margin-top: 40px;
+  border: 1px solid #999;
 }
 
 h4 {
