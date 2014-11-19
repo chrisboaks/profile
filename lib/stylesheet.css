@@ -6,6 +6,7 @@ html, body, main, h1, h2, h3, header, img, ul, li, a {
   font-family: sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
+  color: #333;
 }
 
 .group:after, .group:before {
@@ -60,7 +61,7 @@ div.header-container li a {
 }
 
 div.header-container li a:hover {
-  background: #4682B4
+  background: #4682B4;
 }
 
 div.header-container li a:active{
@@ -113,14 +114,6 @@ h1 {
   margin: 15px;
 }
 
-section.project-links a {
-  color: black;
-}
-
-section.project-links a:hover {
-  color: #696969;
-}
-
 h4 {
   text-align: center;
   margin: 10px;
@@ -135,6 +128,11 @@ figure.project {
   border: 2px solid black;
   border-radius: 4px;
   float: left;
+  box-shadow: 0 1px 5px rgba(0,0,0,.15);
+}
+
+figure.project:hover {
+  box-shadow: 0 0 10px #777;
 }
 
 figure.project video {
@@ -147,7 +145,21 @@ figure.project figcaption {
   margin: 5px;
 }
 
+figcaption ul {
+  text-align-last: right;
+}
+
 figcaption li {
   text-indent: -15px;
   margin-left: 15px;
+}
+
+figcaption li a {
+  color: #1E90FF;
+  display: block;
+  text-align: right;
+}
+
+figcaption li a:hover {
+  color: #4682B4;
 }

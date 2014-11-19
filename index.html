@@ -67,7 +67,7 @@
               <li>Implemented in JS and HTML5 Canvas, using JQuery for input handling</li>
               <li>Features a dynamic starry background, and color-changing radiant explosions</li>
               <li>Includes ambient music and custom sound effects</li>
-              <li><a href="https://github.com/chrisboaks/asteroids">Source</a></li>
+              <li><a href="https://github.com/chrisboaks/asteroids">View Source</a></li>
             </ul>
           </figcaption>
         </figure>
@@ -86,7 +86,7 @@
               <li>Implemented in Rails and Backbone.js.</li>
               <li>Uses Paperclip/Amazon S3 for image storage and retrieval</li>
               <li>Combines AJAX DB requests, jQuery DOM changes, and CSS for smooth favoriting and following</li>
-              <li><a href="https://github.com/chrisboaks/ArtStack">Source</a></li>
+              <li><a href="https://github.com/chrisboaks/ArtStack">View Source</a></li>
             </ul>
           </figcaption>
         </figure>
@@ -106,7 +106,7 @@
               <li>Implemented in Ruby</li>
               <li>Uses custom cursor interaction to enter moves, refreshing terminal with each change</li>
               <li>Visually indicates possible moves and captures, easing play for beginners</li>
-              <li><a href="https://github.com/chrisboaks/chess"></a>Source</li>
+              <li><a href="https://github.com/chrisboaks/chess"></a>View Source</li>
             </ul>
           </figcaption>
         </figure>
@@ -126,7 +126,7 @@
               <li>Implemented using JQuery and Underscore</li>
               <li>Populates example boards of varying difficulty levels</li>
               <li>Allows user to view a stylized hint or solve entire board at once</li>
-              <li><a href="https://github.com/chrisboaks/sudoku">Source</a></li>
+              <li><a href="https://github.com/chrisboaks/sudoku">View Source</a></li>
             </ul>
           </figcaption>
         </figure>
@@ -135,15 +135,15 @@
     </section>
 
     <script charset="utf-8">
-      $('.project-vid').on("mouseenter", function(event) {
+      $('figure.project').on("mouseenter", function(event) {
         event.preventDefault();
-        var vid = $(event.currentTarget);
+        var vid = $(event.currentTarget).find('video');
         vid[0].play();
       });
 
-      $('.project-vid').on("mouseleave", function(event) {
+      $('figure.project').on("mouseleave", function(event) {
         event.preventDefault();
-        var vid = $(event.currentTarget);
+        var vid = $(event.currentTarget).find('video');
         vid[0].pause();
       });
 
