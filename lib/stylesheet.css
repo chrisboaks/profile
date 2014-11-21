@@ -36,6 +36,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 div.header-container {
@@ -133,6 +134,7 @@ h4 {
 }
 
 figure.project {
+  position: relative;
   width: 350px;
   border: 2px solid black;
   border-radius: 4px;
@@ -144,10 +146,19 @@ figure.project:hover {
   box-shadow: 0 0 10px #777;
 }
 
+figure.project img {
+  position: absolute;
+  width: 100%;
+  height: 278px;
+  overflow: hidden;
+  z-index: -1;
+}
+
 figure.project video {
   width: 100%;
   height: 278px;
   overflow: hidden;
+  z-index: 2;
 }
 
 figure.project figcaption {
