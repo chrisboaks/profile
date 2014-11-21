@@ -113,6 +113,7 @@ h2 {
 
 .bio-text {
   margin: 15px;
+  line-height: 150%;
 }
 
 section.bio {
@@ -172,6 +173,7 @@ figcaption ul {
 figcaption li {
   text-indent: -15px;
   margin-left: 15px;
+  line-height: 120%;
 }
 
 figcaption li a {
