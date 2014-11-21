@@ -148,17 +148,17 @@ figure.project:hover {
 
 figure.project img {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 278px;
+  max-height: 278px;
   overflow: hidden;
   z-index: -1;
 }
 
 figure.project video {
+  overflow: hidden;
   width: 100%;
   height: 278px;
-  overflow: hidden;
-  z-index: 2;
 }
 
 figure.project figcaption {
